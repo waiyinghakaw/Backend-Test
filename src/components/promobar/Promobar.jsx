@@ -1,8 +1,20 @@
+import { Helmet } from 'react-helmet';
 import "./promobar.css"
 
 const Promobar = () => {
   return (
     <div className="header-top">
+      <Helmet>
+        <script
+          type="module"
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        />
+        <script
+          nomodule
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        />
+      </Helmet>
+      
       <div className="container">
         <ul className="header-social-container">
           <li>
