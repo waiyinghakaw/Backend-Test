@@ -7,21 +7,21 @@ const Desktopnav = () => {
                 <div className="container">
                     <ul className="desktop-menu-category-list">
                         <li className="menu-category">
-                            <a href="homepage.html" class="menu-title">Home</a>
+                            <a href="/" class="menu-title">Home</a>
                         </li>
 
                         <li className="menu-category">
-                            <a href="listings.html" class="menu-title">Service Listings</a>
+                            <a href="/" class="menu-title">Service Listings</a>
                         </li>
 
                         <li className="menu-category">
-                            <a href="create_listing.html" class="menu-title"
+                            <a href="/#" class="menu-title"
                             >Create a Listing</a
                             >
                         </li>
 
                         <li className="menu-category">
-                            <a href="delete-listings.html" class="menu-title"
+                            <a href="/#" class="menu-title"
                             >View My Listings</a>
                         </li>
                     </ul>

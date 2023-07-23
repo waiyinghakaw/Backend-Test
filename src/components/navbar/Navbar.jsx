@@ -30,7 +30,7 @@ const Navbar = () => {
                         type="search"
                         id="searchInput"
                         name="search"
-                        class="search-field"
+                        className="search-field"
                         placeholder="Search for a service.."
                     />
 
