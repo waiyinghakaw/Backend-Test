@@ -12,7 +12,7 @@ const List = () => {
 
   const searchQuery = location.state && location.state.searchQuery;
 
-  console.log(location);
+
 
   return (
     <div className='search-results'>
