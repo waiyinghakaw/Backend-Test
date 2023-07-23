@@ -1,8 +1,11 @@
-import React from 'react'
+import Promobar from "../../components/promobar/Promobar"
+import "./home.css"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+        <Promobar />
+    </div>
   )
 }
 
