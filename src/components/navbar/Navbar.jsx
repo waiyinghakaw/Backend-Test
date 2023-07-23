@@ -1,7 +1,17 @@
 import { Helmet } from 'react-helmet';
 import "./navbar.css"
+import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+    const [searchInput, setSearchInput] = useState('');
+    const navigate = useNavigate()
+
+    const handleSearch = () => {
+        navigate("/listings", { state: {searchQuery: searchInput} });
+    }
+
+
     return (
         <div className="header-main">
             <Helmet>
@@ -32,9 +42,11 @@ const Navbar = () => {
                         name="search"
                         className="search-field"
                         placeholder="Search for a service.."
+                        value={searchInput}
+                        onChange={(e) => setSearchInput(e.target.value)}
                     />
 
-                    <button className="search-btn left-btn" onclick="search()">
+                    <button className="search-btn left-btn" onClick={handleSearch}>
                         <ion-icon name="search-outline"></ion-icon>
                     </button>
 

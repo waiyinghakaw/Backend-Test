@@ -21,7 +21,7 @@ const Desktopnav = () => {
                         </li>
 
                         <li className="menu-category">
-                            <a href="/#" class="menu-title"
+                            <a href="/mylistings" class="menu-title"
                             >View My Listings</a>
                         </li>
                     </ul>
